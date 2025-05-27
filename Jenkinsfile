@@ -18,7 +18,8 @@ pipeline {
             }
             post {
                 always {
-                    junit 'target/surefire-reports/*.xml'
+                    junit 'target/surefire-reports/*.xml'          // Publish test results in Jenkins UI
+                    archiveArtifacts 'target/surefire-reports/*.xml' // Archive test report files as downloadable artifacts
                 }
             }
         }
