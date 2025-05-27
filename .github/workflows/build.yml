@@ -29,7 +29,8 @@ jobs:
       run: mvn test
 
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.2
       with:
         name: junit-results
         path: target/surefire-reports/*.xml
+
