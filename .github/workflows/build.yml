@@ -36,4 +36,3 @@ jobs:
       with:
         name: junit-results
         path: target/surefire-reports/*
-
