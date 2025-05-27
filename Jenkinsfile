@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = "/usr/local/bin/apache-maven-3.9.9/bin:${env.PATH}"
+    }
     options {
         skipStagesAfterUnstable()
     }
